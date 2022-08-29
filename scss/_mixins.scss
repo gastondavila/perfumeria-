@@ -1,0 +1,33 @@
+@mixin boton {
+  background-color: $c5;
+  color: white;
+  width: 10em;
+  padding: 0.3em 0.3em;
+  font-size: 0.7em;
+  font-family: $f2;
+  text-align: center;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 2em;
+  &:hover {
+    color: black;
+    background-color: $c3;
+    box-shadow: $s;
+    transform: scale(1.1);
+    transition: 150ms linear;
+  }
+}
+@mixin title($b-c, $c, $f-f, $f-s, $f-w, $p) {
+  background-color: $b-c;
+  color: $c;
+  font-family: $f-f;
+  font-size: $f-s;
+  font-weight: $f-w;
+  padding: $p;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 75%;
+}

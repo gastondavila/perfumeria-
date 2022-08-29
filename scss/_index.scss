@@ -1,0 +1,40 @@
+.galeria {
+  .galeria__titulo {
+    h2 {
+      @include title($c6, black, $f3, 2em, 800, 1em);
+    }
+  }
+  .galeria__imagenes {
+    background-color: $c6;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    div {
+      margin: 30px;
+      &:hover {
+        transform: scale(1.08);
+        transition: 200ms linear;
+      }
+      img {
+        height: 208.5px;
+        width: 320px;
+      }
+    }
+  }
+}
+.nosotros {
+  background-color: white;
+  color: black;
+  padding: 1em;
+  font-size: .8em;
+  text-align: center;
+  h2 {
+    padding: 0.2em 0.5em;
+    font-weight: 300;
+  }
+  p {
+    font-weight: 100;
+    padding: 0.5em;
+  }
+}

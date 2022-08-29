@@ -1,0 +1,41 @@
+/* header */
+.menu {
+  margin-bottom: 20px;
+  background-color: $c4;
+  .menu__logo {
+    display: flex;
+    justify-content: center;
+    h1 {
+      color: #000000;
+      font-size: 3em;
+      font-family: $f1;
+      margin-right: 15px;
+    }
+    img {
+      width: 4em;
+    }
+  }
+  .menu__caja {
+    height: 160px;
+    ul {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      li {
+        padding: 8px;
+        height: 40px;
+        font-size: 1em;
+        font-weight: 100;
+        &:hover {
+          background-color: $c1;
+          a {
+            font-weight: 400;
+          }
+        }
+        a {
+          color: black;
+        }
+      }
+    }
+  }
+}
